@@ -1,0 +1,42 @@
+CREATE DATABASE COMPANY;
+USE COMPANY;
+CREATE TABLE EMPLOYEE(
+employee_id MEDIUMINT NOT NULL AUTO_INCREMENT,
+first_name VARCHAR(40) NOT NULL,
+last_name VARCHAR(40) NOT NULL,
+email VARCHAR(40) NOT NULL,
+phone VARCHAR(40) NOT NULL,
+PRIMARY KEY (employee_id),
+);
+
+use COMPANY;
+INSERT INFO EMPLOYEE VALUES (NULL,"Isiodos","Grigoriou","isidor@atmail.com",1,"21130896745");
+INSERT INFO EMPLOYEE VALUES (NULL,"Evgenios","Tripodas","evge@realmail.gr",1,"2106758345");
+INSERT INFO VALUES (NULL,"Mixos","Podas","mixpo@atmail.com",1,"2134565456");
+INSERT INFO VALUES (NULL,"Dimitrios","Dimitriou","dimdar@atmail.com",1,"2130978678");
+INSERT INFO VALUES (NULL,"Mixalios","Aftias","mixat@realmail.com",1,"698745678");
+INSERT INFO VALUES (NULL,"Trelios","Grigoriou","trel@gmail.com",1,"2134554567");
+INSERT INFO VALUES (NULL,"Grigorios","Nikas","nik@atmail.gr",1,"2133443567");
+INSERT INFO VALUES (NULL,"Dimitris","Dimitriou","dimdar@atmail.com",1,"3211232123");
+INSERT INFO VALUES (NULL,"Maria","Mariopoulou","maria@db.com",1,"2134534234");
+INSERT INFO VALUES (NULL,"Nefeli","Variopoulou","nefel@admail.com",1,"2134534123");
+
+USE COMPANY;
+CREATE TABLE PROJECT(
+project_id MEDIUMINT NOT NULL AUTO_INCREMENT,
+deadline VARCHAR(40) NOT NULL,
+PRIMARY KEY (employee_id)
+ FOREIGN KEY (empolyee_id) REFERENCES COMPANY (employee_id),
+);
+
+use COMPANY;
+INSERT INFO PROJECT VALUES (NULL,"Rimotomisi","Ipeirou",1,"2023");
+INSERT INFO PROJECT VALUES (NULL,"Edafi","Kritis",1,"2022");
+INSERT INFO PROJECT VALUES (NULL,"Compost","Athina",1,"2121");
+INSERT INFO PROJECT VALUES (NULL,"Aerodromio","Volou",1,"1999");
+INSERT INFO PROJECT VALUES (NULL,"Limani","Patra",1,"2004");
+INSERT INFO PROJECT VALUES (NULL,"Xyta","Larisa",1,"2009");
+INSERT INFO PROJECT VALUES (NULL,"Parko","Tritsi",1,"2010");
+INSERT INFO PROJECT VALUES (NULL,"Limni","Kopaidas",1,"2015");
+INSERT INFO PROJECT VALUES (NULL,"Aioliko","Tripoli",1,"2019");
+INSERT INFO PROJECT VALUES (NULL,"Katafigio","Kriti",1,"2021");
