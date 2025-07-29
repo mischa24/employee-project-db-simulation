@@ -1,0 +1,65 @@
+# Company & Projects Database – SQL Simulation
+
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+![Built with SQL](https://img.shields.io/badge/Built%20with-SQL-blue)
+![Database: MySQL](https://img.shields.io/badge/Database-MySQL-lightgrey)
+![Tool: phpMyAdmin](https://img.shields.io/badge/Tool-phpMyAdmin-orange)
+
+This project simulates a basic company database using MySQL. It includes tables for employees and projects, demonstrating how to structure and populate relational databases using SQL queries. The database is tested and visualized in **phpMyAdmin**.
+
+---
+
+## 📁 Files Included
+
+- `erg_1_final.txt` – Main SQL script:  
+  - Creates database `COMPANY`  
+  - Defines `EMPLOYEE` and `PROJECT` tables  
+  - Inserts sample data
+
+- `SQLQuery3.sql` – Additional SQL script:  
+  - Defines `Categories` and `Countries` tables (experimental or extra use)
+
+- `Νέο Έγγραφο του Microsoft Word.docx` – Written report of the project  
+- `Νέο Έγγραφο του Microsoft Word.pdf` – Exported PDF version
+
+---
+
+## 🗃️ Database Structure
+
+### `EMPLOYEE`
+| Field       | Type         | Description       |
+|-------------|--------------|-------------------|
+| employee_id | MEDIUMINT PK | Auto-increment ID |
+| first_name  | VARCHAR(40)  | First name        |
+| last_name   | VARCHAR(40)  | Last name         |
+| email       | VARCHAR(40)  | Email address     |
+| phone       | VARCHAR(40)  | Phone number      |
+
+### `PROJECT`
+| Field       | Type         | Description            |
+|-------------|--------------|------------------------|
+| project_id  | MEDIUMINT PK | Project identifier     |
+| deadline    | VARCHAR(40)  | Deadline (as string)   |
+| employee_id | MEDIUMINT FK | Links to EMPLOYEE table |
+
+---
+
+## ⚠️ Notes
+
+- Some SQL statements contain minor typos (`INSERT INFO` instead of `INSERT INTO`, `empolyee_id` misspelled).
+- These are preserved for academic purposes to reflect debugging and correction stages.
+
+---
+
+## 🛠 Tools Used
+
+- MySQL (InnoDB engine)
+- phpMyAdmin for testing and interface
+- Manual SQL scripting (no ORM or automation)
+
+---
+
+## 🎓 Credits
+
+Developed as part of academic coursework in 2025.  
+Author: MikareuTsabilly  
