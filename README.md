@@ -1,3 +1,9 @@
+![License](https://img.shields.io/badge/license-MIT-green)
+![SQL](https://img.shields.io/badge/Database-Relational_SQL-blue)
+![phpMyAdmin](https://img.shields.io/badge/Tested_with-phpMyAdmin-important)
+![Simulation](https://img.shields.io/badge/Simulation-Employee_&_Projects-yellowgreen)
+![Academic](https://img.shields.io/badge/Scope-Academic-lightgrey)
+
 # Company & Projects Database – SQL Simulation
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
